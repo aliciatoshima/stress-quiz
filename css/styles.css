@@ -1,7 +1,30 @@
-#work-responses {
+img {
+  width: 150px;
+  height: auto;
+  padding: 10px;
+  border-radius: 15%;
+}
+
+#warning-responses {
   display: none;
 }
 
-#fun-responses {
+#health-responses {
+  display: none;
+}
+
+#coping-responses {
+  display: none;
+}
+
+#recs1 {
+  display: none;
+}
+
+#recs2 {
+  display: none;
+}
+
+#recs3 {
   display: none;
 }
