@@ -3,18 +3,26 @@
 
 
 $(document).ready(function(){
-  $("form#transportation_survey").submit(function(event){
+  $("form#stress_quiz").submit(function(event){
     event.preventDefault();
-    $("#work-responses").show();
-    $("input:checkbox[name=work-transportation]:checked").each(function(){
-      var workTransportationMode = $(this).val();
-      $('#work-responses').append(workTransportationMode + "<br>");
+    $("#warning-responses").show();
+    $("input:checkbox[name=warning-signs]:checked").each(function(){
+      var warningSigns = $(this).val();
+      $('#warning-responses').append(warningSigns + "<br>");
     });
-    $("#fun-responses").show();
-    $("input:checkbox[name=fun-transportation]:checked").each(function(){
-      var funTransportationMode = $(this).val();
-      $('#fun-responses').append(funTransportationMode + "<br>");
+
+    $("#health-responses").show();
+    $("input:checkbox[name=health-symptoms]:checked").each(function(){
+      var healthSymptoms = $(this).val();
+      $('#health-responses').append(healthSymptoms + "<br>");
     });
-    $('#transportation_survey').hide();
+
+    $("#coping-responses").show();
+    $("input:checkbox[name=coping-methods]:checked").each(function(){
+      var copingMethods = $(this).val();
+      $('#coping-responses').append(copingMethods + "<br>");
+    });
+
+    $('#stress_quiz').hide();
   });
 });
